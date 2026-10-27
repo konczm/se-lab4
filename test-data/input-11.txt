@@ -1,0 +1,3 @@
+# Primary always fails, secondary is fine
+GT4500,10,1,10,0
+TORPEDO,ALL  # secondary still fires -> SUCCESS

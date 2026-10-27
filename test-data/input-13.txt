@@ -1,0 +1,5 @@
+# 2 torpedoes per store, ALL used repeatedly
+GT4500,2,0,2,0
+TORPEDO,ALL  # 1 left in each
+TORPEDO,ALL  # 0 left in each
+TORPEDO,ALL  # empty

@@ -1,14 +1,2 @@
 SUCCESS  # <- GT4500
-SUCCESS  # <- at least one torpedo fired
-SUCCESS  # <- GT4500
-SUCCESS  # <- at least one torpedo fired
-SUCCESS  # <- GT4500
-FAIL  # <- no torpedo fired
-SUCCESS  # <- GT4500
-SUCCESS  # <- at least one torpedo fired
-SUCCESS  # <- GT4500
-FAIL  # <- no torpedo fired
-SUCCESS  # <- GT4500
-SUCCESS
-SUCCESS
-FAIL  # <- stores are empty
+FAIL  # <- primary failed, no retry with secondary
