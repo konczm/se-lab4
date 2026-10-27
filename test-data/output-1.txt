@@ -1,0 +1,18 @@
+SUCCESS  # <- GT4500
+SUCCESS  # <- TORPEDO
+SUCCESS  # <- GT4500
+FAIL  # <- primary failed, no retry with secondary
+SUCCESS  # <- GT4500
+SUCCESS  # <- primary
+FAIL  # <- secondary
+SUCCESS  # <- primary
+FAIL  # <- secondary
+SUCCESS  # <- GT4500
+SUCCESS  # <- fired from secondary
+SUCCESS  # <- GT4500
+SUCCESS  # <- primary
+SUCCESS  # <- fallback to primary
+SUCCESS  # <- GT4500
+FAIL  # <- no torpedo available
+SUCCESS  # <- GT4500
+FAIL  # <- secondary failed

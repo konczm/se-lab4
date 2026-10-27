@@ -1,0 +1,25 @@
+# Create a ship where only the primary store is stocked (secondary is empty), neither fails
+GT4500,10,0,0,0
+TORPEDO,SINGLE  # should have fired from the primary store
+# Primary store always fails, secondary is fine
+GT4500,10,1,10,0
+TORPEDO,SINGLE  # primary is fired first; on failure the other store must NOT be tried
+# Primary never fails, secondary always fails -> alternation is observable
+GT4500,10,0,10,1
+TORPEDO,SINGLE  # primary
+TORPEDO,SINGLE  # secondary (fails)
+TORPEDO,SINGLE  # primary again
+TORPEDO,SINGLE  # secondary again (fails)
+# Primary store empty, secondary stocked
+GT4500,0,0,10,0
+TORPEDO,SINGLE  # primary is first in line but empty -> fires the secondary
+# Secondary store empty, primary stocked
+GT4500,10,0,0,0
+TORPEDO,SINGLE  # primary
+TORPEDO,SINGLE  # secondary is next but empty -> primary fires again
+# Both stores empty
+GT4500,0,0,0,0
+TORPEDO,SINGLE  # nothing to fire
+# Primary empty, secondary always fails
+GT4500,0,0,10,1
+TORPEDO,SINGLE  # falls back to secondary, which reports failure
