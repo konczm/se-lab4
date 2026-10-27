@@ -1,0 +1,6 @@
+# Primary never fails, secondary always fails -> alternation is observable
+GT4500,10,0,10,1
+TORPEDO,SINGLE  # primary
+TORPEDO,SINGLE  # secondary (fails)
+TORPEDO,SINGLE  # primary again
+TORPEDO,SINGLE  # secondary again (fails)
